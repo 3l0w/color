@@ -1,10 +1,9 @@
 #
 # CMake file for color
 #
-cmake_minimum_required (VERSION 2.6.8)
-#set (CMAKE_DISABLE_IN_SOURCE_BUILD ON)
+cmake_minimum_required (VERSION 3.10)
+project(color)
 
-include_directories (src)
+add_library(color INTERFACE)
+target_include_directories(color INTERFACE src)
 
-enable_testing ()
-add_subdirectory (example)
